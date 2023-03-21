@@ -1,0 +1,846 @@
+:root{
+   
+        --dark-navy: #020c1b;
+        --navy: #0a192f;
+        --light-navy: #112240;
+        --lightest-navy: #233554;
+        --navy-shadow: rgba(2,12,27,0.7);
+        --dark-slate: #495670;
+        --slate: #8892b0;
+        --light-slate: #a8b2d1;
+        --lightest-slate: #ccd6f6;
+        --white: #e6f1ff;
+        --green: #64ffda;
+        --green-tint: rgba(100,255,218,0.1);
+        --pink: #f57dff;
+        --blue: #57cbff;
+}
+
+*{
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+html{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background:linear-gradient(to left, #7078aa, #446b5b9a);
+    margin: 0;
+    padding: 5px;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotate(45deg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    animation: rotar 1.9s  ease-in-out infinite;
+    transition: all 1s ease-in-out;
+  }
+  
+.loader:after{
+    content: '';
+    position: absolute;
+    inset: 8px;
+    margin: auto;
+    background: #222b32;
+  }
+.loader:before{
+    content: '';
+    position: absolute;
+    inset: -15px;
+    margin: auto;
+    background: #2f013a49;
+    animation: diamondLoader 2s ease-in-out infinite;
+  }
+@keyframes diamondLoader {
+    0%  ,10% {
+      transform: translate(-64px , -64px) rotate(-45deg)
+    }
+    90% , 100% {
+      transform: translate(0px , 0px) rotate(-45deg)
+    }
+  }
+
+@keyframes rotar {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.container{
+    max-width: 1024px;
+}
+
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*Estilos al header*/
+
+h1{
+    text-align: center;
+    font-family: Consolas, 'Times New Roman', Times, serif;
+    color: #c2c77c;
+    /* font: italic; */
+}
+
+.contenedor__nav{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: index;
+    height: 100%;
+    width: 50%;
+    background:linear-gradient(to left, #515ba1, #43a079cb);
+    padding-left: 5px;
+    color: #fff;
+}
+
+.view--nav{
+    animation: showMenu 1.5s;
+    left: 0;
+}
+
+@keyframes showMenu {
+    0%{
+        left: 0;
+    }
+
+    90%{
+        left: 50%;
+        padding-left: 40%;
+    }
+
+
+    
+
+}
+
+
+.lista__nav a{
+    text-decoration: none;
+}
+
+.lista__nav li{
+    list-style: none;
+}
+.lista__nav{
+    display: flex;
+    flex-direction: column;
+    /* text-align: justify; */
+    padding: 0;
+    gap: 15px;
+}
+
+.lista__nav .link__nav{
+    color: #ffffff;
+    font-weight: 400;
+}
+
+
+.item__nav{
+    border-bottom: 2px solid var(--lightest-slate);
+    border-radius: 5px;
+    width: 150px;
+    padding-left: 5px;
+
+}
+
+.item__nav:hover{
+    animation: subir--item 1s ease-in-out;
+
+}
+
+.seccion{
+    font-family: Georgia;
+    color: rgba(245, 244, 244, 0.77);
+}
+
+.desplegable{
+    padding-top: 7px;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+.btn{
+    position: relative;
+    left: 80%;
+    top: 0%;
+    padding-top: 8px;
+}
+
+
+
+@keyframes subir--item {
+
+    0%{
+        
+        transform: rotate(0deg);
+
+    }
+
+    100%{
+        transform: rotateX(400deg);
+    }
+}
+
+
+.ocultar{
+    display: none;
+}
+
+.ocultaImg{
+    display: none;
+}
+
+@media (min-width:430px){
+    .lista__nav{
+        display: flex;
+        flex-direction: row;
+        text-align: justify;
+        padding: 0;
+        gap: 15px;
+    }
+
+    #titulo{
+        font-family: 'Indie Flower', cursive;
+        font-size: 2.9rem;
+    }
+
+    .container{
+        max-width: 1024px;
+        margin: auto;
+    }
+    
+    .main--content h2{
+        text-align: end;
+        font-family: 'Indie Flower', cursive;
+        color: 000;
+    }
+
+    .alineado{
+        display: grid;
+        grid-template-columns: 400px;
+        gap: 50px;
+        justify-content: end;
+        margin-right: 1rem;
+    }
+
+    .alineado1{
+        display: grid;
+        grid-template-columns: 400px;
+        gap: 50px;
+        justify-content: start;
+        margin-right: 1rem;
+    }
+
+    
+
+    .main--content{
+        padding: 20px;
+        background:linear-gradient(to top,#9c98cf, transparent);
+        border-right: 1px solid #515ba1;
+        border-bottom: #515ba1 solid 1px;
+        box-shadow: 2px 2px #515ba1;
+        border-radius: 5px;
+
+    }
+
+    .main--content h2{
+        text-align: center;
+    }
+
+    .main--content p{
+        font-family: 'Indie flower', cursive;
+        color: #FFF;
+    }
+
+    .desplegable{
+        position: sticky;
+        top: 3px !important;
+        z-index: 3;
+        height: 30px;
+    }
+
+    .desplegable {
+        position: sticky;
+        left: 100% !important;
+        bottom: 0;
+        
+    }
+
+    .contenidoBanner{
+        position: relative;
+        left: 30%;
+        top: -30%;
+    }
+
+    
+
+    .finalidadDiseno{
+        position: fixed;
+        top: 20%;
+        left: 40%;
+        max-width: 350px;
+        background: #ff00b3;
+        padding: 20px;
+        border-radius: 10px;
+        color: #FFF;
+        font-family: 'Indie Flower', cursive;
+        box-shadow: 4px 4px 10px #f0eeefa8;
+        display: none;
+    }
+
+    .finalidadDiseno button{
+        text-align: center;
+        margin: 0px 8rem;
+    }
+
+    .btn--cerrar{
+        position: absolute;
+        right: 1rem;
+    }
+
+    .muestra{
+        display: block;
+        animation: muestraBanner 2s;
+    }
+
+    .btn--cerrar-2{
+        padding: 8px 15px;
+        border-radius: 15px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1rem;
+
+    }
+
+    .main--content{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .imagen1{
+        display: block;
+        justify-self: end;
+        float: right;
+        
+    }
+
+ .container1{
+        margin: 0 auto;
+        background: transparent;
+    }
+
+    .parrafo--item1{
+        font-size: 1rem;
+        text-align: center;
+        color: #d8d8d8;
+    } 
+.main--content h2{
+        text-align: end;
+        font-family: 'Indie Flower', cursive;
+        color: 000;
+    }
+
+    .alineado1{
+        display: grid;
+        grid-template-columns: 400px;
+        gap: 50px;
+        justify-content: start;
+        margin-right: 1rem;
+    }
+
+    .main--content1{
+        padding: 20px;
+        background:linear-gradient(to top,#9c98cf, transparent);
+        border-right: 1px solid #515ba1;
+        border-bottom: #515ba1 solid 1px;
+        box-shadow: 2px 2px #515ba1;
+        border-radius: 5px;
+
+    }
+
+    .main--content1 h2{
+        text-align: center;
+    }
+
+    .main--content1 p{
+        font-family: 'Indie flower', cursive;
+        color: #FFF;
+    }
+
+    .contenidoBanner1{
+        position: relative;
+        left: 30%;
+        top: -30%;
+    }
+
+    
+
+    .finalidadDiseno1{
+        position: fixed;
+        top: 20%;
+        left: 40%;
+        max-width: 350px;
+        background: #ff00b3;
+        padding: 20px;
+        border-radius: 10px;
+        color: #FFF;
+        font-family: 'Indie Flower', cursive;
+        box-shadow: 4px 4px 10px #f0eeefa8;
+        display: none;
+    }
+
+    .finalidadDiseno1 button{
+        text-align: center;
+        margin: 0px 8rem;
+    }
+
+    .btn--cerrar1{
+        position: absolute;
+        right: 1rem;
+    }
+
+    .muestra1{
+        display: block;
+        animation: muestraBanner2 2s;
+    }
+
+    .btn--cerrar-2{
+        padding: 8px 15px;
+        border-radius: 15px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1rem;
+
+    }
+
+    /*Banner #2*/
+
+.main--content2{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+.imagen2{
+        display: block;
+        justify-self: end;
+        float: right;
+        
+    }
+
+ .container2{
+        margin: auto;
+        background: transparent;
+    }
+
+    .parrafo--item2{
+        font-size: 1rem;
+        text-align: center;
+        color: #d8d8d8;
+    } 
+.main--content2 h2{
+        text-align: end;
+        font-family: 'Indie Flower', cursive;
+        color: 000;
+    }
+
+    .alineado2{
+        display: grid;
+        grid-template-columns: 400px;
+        gap: 50px;
+        justify-content: end;
+        margin-right: 1rem;
+    }
+
+    .main--content2{
+        padding: 20px;
+        background:linear-gradient(to top,#9c98cf, transparent);
+        border-right: 1px solid #515ba1;
+        border-bottom: #515ba1 solid 1px;
+        box-shadow: 2px 2px #515ba1;
+        border-radius: 5px;
+
+    }
+
+    .main--content2 h2{
+        text-align: center;
+    }
+
+    .main--content2 p{
+        font-family: 'Indie flower', cursive;
+        color: #FFF;
+    }
+
+    .contenidoBanner2{
+        position: relative;
+        left: 30%;
+        top: -30%;
+    }
+
+    
+
+    .finalidadDiseno2{
+        position: fixed;
+        top: 20%;
+        left: 40%;
+        max-width: 350px;
+        background: #ff00b3;
+        padding: 20px;
+        border-radius: 10px;
+        color: #FFF;
+        font-family: 'Indie Flower', cursive;
+        box-shadow: 4px 4px 10px #f0eeefa8;
+        display: none;
+    }
+
+    .finalidadDiseno2 button{
+        text-align: center;
+        margin: 0px 8rem;
+    }
+
+    .btn--cerrar2{
+        position: absolute;
+        right: 1rem;
+    }
+
+    .muestra2{
+        display: block;
+        animation: muestraBanner 2s;
+    }
+
+    .btn--cerrar-22{
+        padding: 8px 15px;
+        border-radius: 15px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1rem;
+
+    }
+
+
+    /*Banner 3 ------------------------------------*/
+
+    .main--content3{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+.imagen3{
+        display: block;
+        justify-self: end;
+        float: right;
+        
+    }
+
+ .container3{
+        margin: auto;
+        background: transparent;
+    }
+
+    .parrafo--item3{
+        font-size: 1rem;
+        text-align: center;
+        color: #d8d8d8;
+    } 
+.main--content3 h2{
+        text-align: end;
+        font-family: 'Indie Flower', cursive;
+        color: 000;
+    }
+
+    .alineado3{
+        display: grid;
+        grid-template-columns: 400px;
+        gap: 50px;
+        justify-content: start;
+        margin-right: 1rem;
+    }
+
+    .main--content3{
+        padding: 20px;
+        background:linear-gradient(to top,#9c98cf, transparent);
+        border-right: 1px solid #515ba1;
+        border-bottom: #515ba1 solid 1px;
+        box-shadow: 2px 2px #515ba1;
+        border-radius: 5px;
+
+    }
+
+    .main--content3 h2{
+        text-align: center;
+    }
+
+    .main--content3 p{
+        font-family: 'Indie flower', cursive;
+        color: #FFF;
+    }
+
+    .contenidoBanner3{
+        position: relative;
+        left: 30%;
+        top: -30%;
+    }
+
+    
+
+    .finalidadDiseno3{
+        position: fixed;
+        top: 20%;
+        left: 40%;
+        max-width: 350px;
+        background: #ff00b3;
+        padding: 20px;
+        border-radius: 10px;
+        color: #FFF;
+        font-family: 'Indie Flower', cursive;
+        box-shadow: 4px 4px 10px #f0eeefa8;
+        display: none;
+    }
+
+    .finalidadDiseno3 button{
+        text-align: center;
+        margin: 0px 8rem;
+    }
+
+    .btn--cerrar3{
+        position: absolute;
+        right: 1rem;
+    }
+
+    .muestra3{
+        display: block;
+        animation: muestraBanner2 2s;
+    }
+
+    .btn--cerrar-23{
+        padding: 8px 15px;
+        border-radius: 15px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1rem;
+
+    }
+
+
+    /*Cuarto Banner ---------------------*/
+
+    .main--content4{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+.imagen4{
+        display: block;
+        justify-self: end;
+        float: right;
+        
+    }
+
+ .container4{
+        margin: auto;
+        background: transparent;
+    }
+
+    .parrafo--item4{
+        font-size: 1rem;
+        text-align: center;
+        color: #d8d8d8;
+    } 
+.main--content4 h2{
+        text-align: end;
+        font-family: 'Indie Flower', cursive;
+        color: 000;
+    }
+
+    .alineado4{
+        display: grid;
+        grid-template-columns: 400px;
+        gap: 50px;
+        justify-content: end;
+        margin-right: 1rem;
+    }
+
+    .main--content4{
+        padding: 20px;
+        background:linear-gradient(to top,#9c98cf, transparent);
+        border-right: 1px solid #515ba1;
+        border-bottom: #515ba1 solid 1px;
+        box-shadow: 2px 2px #515ba1;
+        border-radius: 5px;
+
+    }
+
+    .main--content4 h2{
+        text-align: center;
+    }
+
+    .main--content4 p{
+        font-family: 'Indie flower', cursive;
+        color: #FFF;
+    }
+
+    .contenidoBanner4{
+        position: relative;
+        left: 30%;
+        top: -30%;
+    }
+
+    
+
+    .finalidadDiseno4{
+        position: fixed;
+        top: 20%;
+        left: 40%;
+        max-width: 350px;
+        background: #ff00b3;
+        padding: 20px;
+        border-radius: 10px;
+        color: #FFF;
+        font-family: 'Indie Flower', cursive;
+        box-shadow: 4px 4px 10px #f0eeefa8;
+        display: none;
+    }
+
+    .finalidadDiseno4 button{
+        text-align: center;
+        margin: 0px 8rem;
+    }
+
+    .btn--cerrar4{
+        position: absolute;
+        right: 1rem;
+    }
+
+    .muestra4{
+        display: block;
+        animation: muestraBanner 2s;
+    }
+
+    .btn--cerrar-24{
+        padding: 8px 15px;
+        border-radius: 15px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1rem;
+
+    }
+
+    @keyframes muestraBanner {
+        0%{
+            left: 10%;
+        }
+
+        50%{
+            transform: rotate(-10deg);
+        }
+
+        100%{
+            top: 20%;
+        }
+    }
+
+    @keyframes muestraBanner2 {
+        0%{
+            left: 80%;
+        }
+
+        50%{
+            transform: rotate(-10deg);
+        }
+
+        100%{
+            top: 20%;
+        }
+    }
+
+}
+
+.section{
+    position: relative;
+}
+
+.contenido{
+    position: fixed;
+    bottom: 1rem;
+    max-width: 50%;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.redes img:hover{
+    animation: hoverRedes 2s;
+}
+
+@keyframes hoverRedes {
+    0%{
+        transform: rotate(360deg);
+        background-color: #FFF;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width:532px) {
+    .item__nav{
+        border-bottom: 2px solid var(--lightest-slate);
+        border-top: 2px solid var(--lightest-slate);
+        border-radius: 5px;
+        width: 150px;
+        padding-left: 5px;
+    
+    }
+
+    .lista__nav{
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor__nav{
+        max-width: 350px;
+    }
+}
+
+@media (max-width:322px){
+    body{
+        background: #FFF;
+        display: none;
+    }
+
+    .desplegable{
+        position: absolute;
+        top: 0%;
+        right: 5px;
+    }
+}

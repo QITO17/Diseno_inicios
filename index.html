@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imgs/icon.ico" class="icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/components/menu.js" defer></script>
+     
+</head>
+<body>
+    
+    <div class="loader loader--hidden">
+        <div class="loader__content">
+            <span class=""></span>
+        </div>
+    </div>
+
+    <header class="header">
+        
+        <div class="header__container container">
+            <h1 id="titulo">Principios del diseño</h1>
+            
+            <nav class="nav">
+                <div class="contenedor__nav">
+                    <h3 class="seccion">Secciones</h3>
+                    <a href="#" class="btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvVlf8RATEQhb+rgA6UgA7oQAdGB1RACyqgBB3QATqgAypw82YuJrMuSO6Hkf8ud/u+7Nu9bEbDK2tYn9YBE2AJDBIzuwALYOfibQb6oJco7sJOwDAEeFQUf9G1GfwMcAc6JruyvaQMZoB8PXgQiY+KZtiU2Pp05pNFN2BcANRZgmhJXFDt7YGugXwNUJyFaO+duN5HASxEz6GTJ9VAQc5zndwB/JrYMkRl4Iu7P9xZFIJEAfRX+p7rtH7hj1W6SLFbYG26xRV+DkyrAlJujyiL/gtQx3V99ueJvSo0cFZAP8UX4Aqo8MGBk6gbDmt9JteeQQ5DIzkZa1FwRAAAAABJRU5ErkJggg==" /></a>
+                    <ul class="lista__nav">
+                        <li class="item__nav"><a href="#diseno" class="link__nav">Princios de diseño</a></li>
+                        <li class="item__nav"><a href="#contraste" class="link__nav">Contraste</a></li>
+                        <li class="item__nav"><a href="#enfasis" class="link__nav">El Enfasis</a></li>
+                        <li class="item__nav"><a href="#ritmo" class="link__nav">Ritmo o Repeticion</a></li>
+                        <li class="item__nav"><a href="#proximidad" class="link__nav">Proximidad</a></li>
+                    </ul>
+                    <main class="main">
+                        <section class="section">
+                            <div class="contenido">
+                                <p>Bienvenidos</p>
+                                <p>Difruten de la estadia en la página web</p>
+                                <ul class="redes">
+                                    <li><a href="https://github.com/QITO17"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZdJREFUSEu1lYExBVEMRe+vABWgAlSAClABKkAFqAAdUMGnAlSADuiACpgzk+zkZ7L735rZzOzs7puXe5P7kryZJrbZxPhqITiUdCBp2x5ierfnRdLDUJBDBADfSNpYkuWnpAtJj9W+PoIrSZcj5bs1ogW3iuA/4A56J+k8MmSCPUnPtuFJEmQnks5s7cPeW/ZG/3vbc2xrR1GuTICe67bx2gj4XZX0nSSLazFrMDZ9byTgUOcBhOiIvsWyrKeW2UKZkqqnCei+JMqwxSjhtyq4mAFgu0FrnMZY9KdPdnCOBGi8YoivkjjwMRYJOuxI8BvQJiGIEZDN2pjwrcpcgS+fADGDfMi0P93ZYjQXY8Wtq8C+Mv2x86D86M7cAw5EL1B5OZCyTHGiSUiTEiUqL1u6mp5wIoDJmKrjO1onT64i/n1UAESZOUjsagfLkvr6Qv9Uw871LKdjCLUaikuHnfs7CQ1DNj7UohSZoMpy8EZDLmRg+FXOToDmnE85VlquTIjIgmyiMUq47cqbzDe2ELT0Qe+eyQn+AIklVhnz1DvpAAAAAElFTkSuQmCC" title="Github"></a></li>
+                                    <li><a href="https://www.facebook.com/arley.hurtado.5667/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg==" title="facebook"/></a></li>
+                                    <li><a href="https://www.linkedin.com/in/free-fire-qito-57ab49255/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOdJREFUSEvllWENwjAQhb8pAAk4AAeAA1AAEnCCBXAACgAHSEACKIC85Eqabg0s1y0h3K82ub5vd++6VnQcVcf69A44A1NnVdKYB420gqdTvKabAzyAg2UvgEFL8Fs3B9gDaxPdAaufA9yTFg1LVyAPriY6MQ8uth8BAsqjGyCPxskHfPRAYjM7FEY3HJI3EleVITbANtq7ALluCRimzQVQe06AWreMvIovqQug1gmgOJoHWncCaPJKsGIV/DFAIxdfNE2OTFRorQlSNOV95UHLP0MtPWtyiQcnNr7/J9Pbmnyviiub4As/E0wZX0UvUwAAAABJRU5ErkJggg==" title="linkedin"/></a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<main class="main" id="diseno">
+    <section class="section contenidoCuerpo container">
+        <div class="conteiner">
+            <div class="alineado">
+                <article class="main--content">            
+                    <div class="contenidoCentrado">
+                        <h2>Finalidad del diseño</h2>
+                        <div class="parrafos">
+                            <p class="parrafo--item">Como ya se dijo en la página anterior la finalidad del diseño web es conseguir que las páginas que hagamos sean útiles y atractivas, es decir marcamos como claves de un buen diseño la funcionalidad y la estética. </p>
+                        </div>
+                    </div>    
+                    <div class="imagen">
+                        <img src="./imgs/Blog.png" alt="Blog" width="200px" height="200pxs" data-aos="fade-up-left">
+                    </div> 
+                </article>
+            </div>  
+    </section>
+</main>
+<div class="banner">
+    <div class="contenidoBanner">
+        <div class="finalidadDiseno">
+            <a href="#" class="btn--cerrar"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvVlf8RATEQhb+rgA6UgA7oQAdGB1RACyqgBB3QATqgAypw82YuJrMuSO6Hkf8ud/u+7Nu9bEbDK2tYn9YBE2AJDBIzuwALYOfibQb6oJco7sJOwDAEeFQUf9G1GfwMcAc6JruyvaQMZoB8PXgQiY+KZtiU2Pp05pNFN2BcANRZgmhJXFDt7YGugXwNUJyFaO+duN5HASxEz6GTJ9VAQc5zndwB/JrYMkRl4Iu7P9xZFIJEAfRX+p7rtH7hj1W6SLFbYG26xRV+DkyrAlJujyiL/gtQx3V99ueJvSo0cFZAP8UX4Aqo8MGBk6gbDmt9JteeQQ5DIzkZa1FwRAAAAABJRU5ErkJggg==" /></a>
+            <h2>¿Que es la finalidad del diseño</h2>
+            <p>En principio podemos pensar que para conseguir ésto nos basta con el sentido común y el buen gusto. Sin embargo, no está de más tener en cuenta una serie de principios y de técnicas que pueden ayudarnos a construir mejor nuestra página. Por supuesto no debemos dejar de lado el sentido común y el buen gusto, y la finalidad de todo diseño web: crear una página útil y atractiva.</p>
+            <button class="btn--cerrar-2">cerrar</button> 
+        </div>
+    </div>
+</div>
+
+<main class="main1" id="contraste">
+    <section class="section1 contenidoCuerpo1 container">
+        <div class="conteiner1">
+            <div class="alineado1">
+                <article class="main--content1">            
+                    <div class="contenidoCentrado1">
+                        <h2>¿Que es el contraste?</h2>
+                        <div class="parrafos1">
+                            <p class="parrafo--item1">Contraste 
+
+                                El contraste es la diferencia que existe entre dos o más elementos relacionados. Podemos tener un mayor o menor contraste entre los elementos dependiendo de si éstos tienen mayores o menores diferencias. Depende del efecto buscado pondremos un mayor o menor contraste entre los elementos. Podemos tener varios tipos de contraste: </p>
+                        </div>
+                    </div>    
+                    <div class="imagen1">
+                        <img src="./imgs/Blog.png" alt="Blog" width="200px" height="200pxs" data-aos="fade-up-left">
+                    </div> 
+                </article>
+            </div>  
+    </section>
+</main>
+
+<div class="banner1">
+    <div class="contenidoBanner1">
+        <div class="finalidadDiseno1">
+            <a href="#" class="btn--cerrar1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvVlf8RATEQhb+rgA6UgA7oQAdGB1RACyqgBB3QATqgAypw82YuJrMuSO6Hkf8ud/u+7Nu9bEbDK2tYn9YBE2AJDBIzuwALYOfibQb6oJco7sJOwDAEeFQUf9G1GfwMcAc6JruyvaQMZoB8PXgQiY+KZtiU2Pp05pNFN2BcANRZgmhJXFDt7YGugXwNUJyFaO+duN5HASxEz6GTJ9VAQc5zndwB/JrYMkRl4Iu7P9xZFIJEAfRX+p7rtH7hj1W6SLFbYG26xRV+DkyrAlJujyiL/gtQx3V99ueJvSo0cFZAP8UX4Aqo8MGBk6gbDmt9JteeQQ5DIzkZa1FwRAAAAABJRU5ErkJggg==" /></a>
+            <h2>¿Que es el contraste?</h2>
+            <p>Dependiendo de los colores que usemos, unos elementos resaltarán más que otros, los colores vivos y fuertes resaltan más que los colores apagados o tonos pastel. 
+
+                Por otra parte los colores contrastarán más cuanto más alejados estén en el circulo cromático. Así los colores fríos contrastan con los colores cálidos, y cada color tendrá su máximo contraste en su color opuesto o complementario. 
+                
+                Especial importancia en el contraste tienen los textos, los cuales deben contrastar nítidamente con el fondo para una fácil lectura. Lo más usado suele ser el texto negro sobre fondo blanco, por tener uno de los mayores contrastes. </p>
+            <button class="btn--cerrar-21">cerrar</button> 
+        </div>
+    </div>
+</div>
+
+
+<main class="main2" id="enfasis">
+    <section class="section2 contenidoCuerpo2 container">
+        <div class="conteiner2">
+            <div class="alineado2">
+                <article class="main--content2">            
+                    <div class="contenidoCentrado2">
+                        <h2>¿Que es el énfasis?</h2>
+                        <div class="parrafos2">
+                            <p class="parrafo--item2">Como tercer principio del diseño tenemos el énfasis. El énfasis consiste en resaltar algunos elementos respecto del resto de la página. Podemos distinguir tres tipos de elementos destacados: 
+
+                                Elementos dominantes : Normalmente suelen ser los títulos, el logo, y otros elementos que queremos que se visualicen nada más abrirse la página. </p>
+                        </div>
+                    </div>    
+                    <div class="imagen2">
+                        <img src="./imgs/Blog.png" alt="Blog" width="200px" height="200pxs" data-aos="fade-up-left">
+                    </div> 
+                </article>
+            </div>  
+    </section>
+</main>
+
+<div class="banner2">
+    <div class="contenidoBanner2">
+        <div class="finalidadDiseno2">
+            <a href="#" class="btn--cerrar2-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvVlf8RATEQhb+rgA6UgA7oQAdGB1RACyqgBB3QATqgAypw82YuJrMuSO6Hkf8ud/u+7Nu9bEbDK2tYn9YBE2AJDBIzuwALYOfibQb6oJco7sJOwDAEeFQUf9G1GfwMcAc6JruyvaQMZoB8PXgQiY+KZtiU2Pp05pNFN2BcANRZgmhJXFDt7YGugXwNUJyFaO+duN5HASxEz6GTJ9VAQc5zndwB/JrYMkRl4Iu7P9xZFIJEAfRX+p7rtH7hj1W6SLFbYG26xRV+DkyrAlJujyiL/gtQx3V99ueJvSo0cFZAP8UX4Aqo8MGBk6gbDmt9JteeQQ5DIzkZa1FwRAAAAABJRU5ErkJggg==" /></a>
+            <h2>¿Que es el Enfasis?</h2>
+            <p>Elementos subdominantes : Son los elementos que queremos que destaquen a un segundo nivel, es decir subtítulos, algunas imágenes, etc. 
+
+                Elementos destacados : Aquellos elementos, que formando parte del flujo normal de la página, queremos resaltar sobre el resto, por ejemplo ideas o palabras importantes que resaltamos en negrita, o los enlaces, los cuales también suelen ir resaltados en distinto color. 
+                
+                Para dar énfasis lo normal es utilizar los siguientes recursos : </p>
+            <button class="btn--cerrar-22">cerrar</button> 
+        </div>
+    </div>
+</div>
+
+<main class="main3" id="ritmo">
+    <section class="section3 contenidoCuerpo3 container">
+        <div class="conteiner3">
+            <div class="alineado3">
+                <article class="main--content3">            
+                    <div class="contenidoCentrado3">
+                        <h2>¿Que es el ritmo o repeticion?</h2>
+                        <div class="parrafos3">
+                            <p class="parrafo--item3"> 
+
+                                El ritmo o repetición 
+                                
+                                El ritmo es la repetición o alternancia de elementos. Conseguimos así una regularidad en la página que crea una sensación de orden y coherencia, facilita la búsqueda de los elementos, y da una cierta estabilidad a la página. 
+                                
+                                La repetición también suele darse entre las distintas páginas de un mismo sitio, las cuales suelen tener un aspecto similar (misma distribución, mismos colores, mismo encabezado, etc.)</p>
+                        </div>
+                    </div>    
+                    <div class="imagen3">
+                        <img src="./imgs/Blog.png" alt="Blog" width="200px" height="200pxs" data-aos="fade-up-left">
+                    </div> 
+                </article>
+            </div>  
+    </section>
+</main>
+    
+<div class="banner3">
+    <div class="contenidoBanner3">
+        <div class="finalidadDiseno3">
+            <a href="#" class="btn--cerrar3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvVlf8RATEQhb+rgA6UgA7oQAdGB1RACyqgBB3QATqgAypw82YuJrMuSO6Hkf8ud/u+7Nu9bEbDK2tYn9YBE2AJDBIzuwALYOfibQb6oJco7sJOwDAEeFQUf9G1GfwMcAc6JruyvaQMZoB8PXgQiY+KZtiU2Pp05pNFN2BcANRZgmhJXFDt7YGugXwNUJyFaO+duN5HASxEz6GTJ9VAQc5zndwB/JrYMkRl4Iu7P9xZFIJEAfRX+p7rtH7hj1W6SLFbYG26xRV+DkyrAlJujyiL/gtQx3V99ueJvSo0cFZAP8UX4Aqo8MGBk6gbDmt9JteeQQ5DIzkZa1FwRAAAAABJRU5ErkJggg==" /></a>
+            <h2>¿Que es el ritmo o repeticion?</h2>
+            <p>Ritmo regular : Es la forma más simple, se trata de colocar elementos similares a distancias similares. Un ejemplo tip�co son los álbumes de fotos (por ejemplo de Picassa) donde vemos las imágenes distribuidas de manera regular tanto en horizontal como en vertical. 
+
+                Ritmo sincopado : Aquí lo que se repite es una secuencia de elementos. Un ejemplo típico son los escaparates de las tiendas on-line (por ejemplo Amazon), en donde se repiten una serie de casillas, en cada una de las cuales tenemos la imagen del producto, su descripción, su precio, y un enlace para verlo más en detalle. </p>
+            <button class="btn--cerrar-23">cerrar</button> 
+        </div>
+    </div>
+</div>
+
+<main class="main4" id="proximidad">
+    <section class="section4 contenidoCuerpo4 container">
+        <div class="conteiner4">
+            <div class="alineado4">
+                <article class="main--content4">            
+                    <div class="contenidoCentrado4">
+                        <h2>¿Que es la proximidad?</h2>
+                        <div class="parrafos4">
+                            <p class="parrafo--item4"> 
+
+                                Proximidad 
+                                
+                                El principio de proximidad indica que todos los elementos similares deben estar próximos entre sí. Un ejemplo claro son los menús de navegación, los cuales suelen agrupar todos los enlaces para ir a las distiintas partes del sitio. 
+                                
+                                Para agrupar elementos similares, no sólo debemos tener en cuenta que estén próximos, sino que éstos deben tener tambien un aspecto similar (mismos colores, misma forma, etc).</p>
+                        </div>
+                    </div>    
+                    <div class="imagen4">
+                        <img src="./imgs/Blog.png" alt="Blog" width="200px" height="200pxs" data-aos="fade-up-left">
+                    </div> 
+                </article>
+            </div>  
+    </section>
+</main>
+    
+<div class="banner4">
+    <div class="contenidoBanner4">
+        <div class="finalidadDiseno4">
+            <a href="#" class="btn--cerrar4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvVlf8RATEQhb+rgA6UgA7oQAdGB1RACyqgBB3QATqgAypw82YuJrMuSO6Hkf8ud/u+7Nu9bEbDK2tYn9YBE2AJDBIzuwALYOfibQb6oJco7sJOwDAEeFQUf9G1GfwMcAc6JruyvaQMZoB8PXgQiY+KZtiU2Pp05pNFN2BcANRZgmhJXFDt7YGugXwNUJyFaO+duN5HASxEz6GTJ9VAQc5zndwB/JrYMkRl4Iu7P9xZFIJEAfRX+p7rtH7hj1W6SLFbYG26xRV+DkyrAlJujyiL/gtQx3V99ueJvSo0cFZAP8UX4Aqo8MGBk6gbDmt9JteeQQ5DIzkZa1FwRAAAAABJRU5ErkJggg==" /></a>
+            <h2>¿Que es proximidad?</h2>
+            <p>Conclusión 
+
+                La finalidad de estos principios del diseño es ayudarnos a buscar el diseño más adecuado para nuestra página. Debemos plantearnos primero cuales son los efectos que buscamos en el usuario al visualizar nuestra página, y después aplicar más o menos cada uno de estos principios. 
+                
+                No está de más, antes de ponernos a diseñar nuestra página directamente en HTML o CSS, hacernos un boceto en papel de cómo queremos que se vea nuestra página en la pantalla. Los principios del diseño son una ayuda para conseguir un buen diseño, en el cual sepamos transmitir al usuario los efectos deseados. </p>
+            <button class="btn--cerrar-24">cerrar</button> 
+        </div>
+    </div>
+</div>
+
+<a class="desplegable" href="#"><img class="meni" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="/></a>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
